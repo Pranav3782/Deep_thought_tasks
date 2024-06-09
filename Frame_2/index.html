@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poly:ital,wght@0,400;1,400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poly:ital,wght@0,400;1,400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poly:ital,wght@0,400;1,400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poly:ital,wght@0,400;1,400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="expanded-journey-board-container">
+        <div class="expanded-journey-board-expanded-journey-board">
+          <img
+            src="public/external/rectangle18721190-wpc-500w.png"
+            alt="Rectangle18721190"
+            class="expanded-journey-board-rectangle1872"
+          />
+          <img
+            src="public/external/rectangle23231191-ehhr-500h.png"
+            alt="Rectangle23231191"
+            class="expanded-journey-board-rectangle2323"
+          />
+          <img
+            src="public/external/rectangle23241192-le3d-200h.png"
+            alt="Rectangle23241192"
+            class="expanded-journey-board-rectangle2324"
+          />
+          <img
+            src="public/external/rectangle18711193-3odb-500w.png"
+            alt="Rectangle18711193"
+            class="expanded-journey-board-rectangle1871"
+          />
+          <img
+            src="public/external/rectangle18781194-7pdu-500w.png"
+            alt="Rectangle18781194"
+            class="expanded-journey-board-rectangle1878"
+          />
+          <img
+            src="public/external/rectangle23201195-o1b9-200h.png"
+            alt="Rectangle23201195"
+            class="expanded-journey-board-rectangle2320"
+          />
+          <div class="expanded-journey-board-group1729">
+            <img
+              src="public/external/ellipse531198-pv6j-200h.png"
+              alt="Ellipse531198"
+              class="expanded-journey-board-ellipse53"
+            />
+            <img
+              src="public/external/ellipse11199-4re-200h.png"
+              alt="Ellipse11199"
+              class="expanded-journey-board-ellipse1"
+            />
+            <img
+              src="public/external/ellipse21200-4wqk-200h.png"
+              alt="Ellipse21200"
+              class="expanded-journey-board-ellipse2"
+            />
+            <img
+              src="public/external/ellipse31201-frih-200h.png"
+              alt="Ellipse31201"
+              class="expanded-journey-board-ellipse3"
+            />
+            <img
+              src="public/external/ellipse561202-zgpd-200w.png"
+              alt="Ellipse561202"
+              class="expanded-journey-board-ellipse56"
+            />
+            <img
+              src="public/external/vector1203-jie.svg"
+              alt="Vector1203"
+              class="expanded-journey-board-vector"
+            />
+            <img
+              src="public/external/ellipse551204-y9i-200h.png"
+              alt="Ellipse551204"
+              class="expanded-journey-board-ellipse55"
+            />
+            <img
+              src="public/external/logo11205-fnv2.svg"
+              alt="logo11205"
+              class="expanded-journey-board-logo1"
+            />
+            <div class="expanded-journey-board-group1100">
+              <div class="expanded-journey-board-group1098">
+                <img
+                  src="public/external/ellipse561224-4nnc-200w.png"
+                  alt="Ellipse561224"
+                  class="expanded-journey-board-ellipse561"
+                />
+              </div>
+              <span class="expanded-journey-board-text">
+                <span>tools</span>
+              </span>
+            </div>
+            <div class="expanded-journey-board-group1097">
+              <img
+                src="public/external/ellipse561227-xb5s-200w.png"
+                alt="Ellipse561227"
+                class="expanded-journey-board-ellipse562"
+              />
+              <span class="expanded-journey-board-text002"></span>
+            </div>
+          </div>
+          <span class="expanded-journey-board-text003">
+            <span>Technical Project Management</span>
+          </span>
+          <img
+            src="public/external/rectangle18691230-b8j9-500w.png"
+            alt="Rectangle18691230"
+            class="expanded-journey-board-rectangle1869"
+          />
+          <img
+            src="public/external/rectangle18741231-lxq-200h.png"
+            alt="Rectangle18741231"
+            class="expanded-journey-board-rectangle1874"
+          />
+          <img
+            src="public/external/rectangle23211232-y7ms-200h.png"
+            alt="Rectangle23211232"
+            class="expanded-journey-board-rectangle2321"
+          />
+          <img
+            src="public/external/rectangle18701233-w173-500w.png"
+            alt="Rectangle18701233"
+            class="expanded-journey-board-rectangle1870"
+          />
+          <img
+            src="public/external/rectangle18731234-d558-200h.png"
+            alt="Rectangle18731234"
+            class="expanded-journey-board-rectangle1873"
+          />
+          <div class="expanded-journey-board-group1730">
+            <span class="expanded-journey-board-text005">
+              <span>Explore the world of management</span>
+            </span>
+            <span class="expanded-journey-board-text007">
+              <span>
+                As a project manager, you play an important reole in leading a
+                project through initiation, planning, execution, monitoring,
+                controlling and completion. How? Do you want to manage each and
+                every step of your life?
+              </span>
+            </span>
+          </div>
+          <img
+            src="public/external/rectangle18751238-jc-200h.png"
+            alt="Rectangle18751238"
+            class="expanded-journey-board-rectangle1875"
+          />
+          <span class="expanded-journey-board-text009">
+            <span class="expanded-journey-board-text010">Description :</span>
+            <span>
+              Write a 300 - 400 word article from your thread . Publish your
+              understanding and showcase your understanding to the entire world
+            </span>
+          </span>
+          <span class="expanded-journey-board-text012">
+            <span class="expanded-journey-board-text013">Description :</span>
+            <span>To Explore more read more</span>
+          </span>
+          <span class="expanded-journey-board-text015"><span>Title</span></span>
+          <span class="expanded-journey-board-text017">
+            <span>Content</span>
+          </span>
+          <img
+            src="public/external/rectangle18801243-hew-200h.png"
+            alt="Rectangle18801243"
+            class="expanded-journey-board-rectangle1880"
+          />
+          <img
+            src="public/external/rectangle18821244-yf3q-200h.png"
+            alt="Rectangle18821244"
+            class="expanded-journey-board-rectangle1882"
+          />
+          <span class="expanded-journey-board-text019">
+            <span class="expanded-journey-board-text020">Description:</span>
+            <span>
+              Story of Alignment Scope of Agility Specific Accountable
+              Staggering Approach
+            </span>
+          </span>
+          <span class="expanded-journey-board-text022"><span>File</span></span>
+          <span class="expanded-journey-board-text024"><span>Edit</span></span>
+          <span class="expanded-journey-board-text026"><span>View</span></span>
+          <span class="expanded-journey-board-text028">
+            <span>Insert</span>
+          </span>
+          <span class="expanded-journey-board-text030">
+            <span>Format</span>
+          </span>
+          <span class="expanded-journey-board-text032"><span>Tools</span></span>
+          <span class="expanded-journey-board-text034"><span>Table</span></span>
+          <span class="expanded-journey-board-text036"><span>Help</span></span>
+          <img
+            src="public/external/image131254-blaf-500w.png"
+            alt="image131254"
+            class="expanded-journey-board-image13"
+          />
+          <img
+            src="public/external/arrowcurveleftdown1255-495.svg"
+            alt="arrowcurveleftdown1255"
+            class="expanded-journey-board-arrowcurveleftdown"
+          />
+          <img
+            src="public/external/arrowcurveleftright1256-r2re.svg"
+            alt="arrowcurveleftright1256"
+            class="expanded-journey-board-arrowcurveleftright"
+          />
+          <span class="expanded-journey-board-text038">
+            <span>Technical Project Management</span>
+          </span>
+          <span class="expanded-journey-board-text040">
+            <span>Structure your Pointers</span>
+          </span>
+          <img
+            src="public/external/rectangle23181259-vsfb-200h.png"
+            alt="Rectangle23181259"
+            class="expanded-journey-board-rectangle2318"
+          />
+          <span class="expanded-journey-board-text042">
+            <span>Paragraph</span>
+          </span>
+          <span class="expanded-journey-board-text044">
+            <span>Threadbuild</span>
+          </span>
+          <img
+            src="public/external/rectangle23191262-92o-200h.png"
+            alt="Rectangle23191262"
+            class="expanded-journey-board-rectangle2319"
+          />
+          <span class="expanded-journey-board-text046">
+            <span class="expanded-journey-board-text047">Description:</span>
+            <span>
+              Watch the video and threadbuild, and jot out key threads while
+              watching the video
+            </span>
+          </span>
+          <div class="expanded-journey-board-group1431">
+            <span class="expanded-journey-board-text049">
+              <span>Thread A</span>
+            </span>
+          </div>
+          <img
+            src="public/external/vector1267-w7g.svg"
+            alt="Vector1267"
+            class="expanded-journey-board-vector01"
+          />
+          <img
+            src="public/external/vector1268-976.svg"
+            alt="Vector1268"
+            class="expanded-journey-board-vector02"
+          />
+          <div class="expanded-journey-board-group1600">
+            <div class="expanded-journey-board-group1485">
+              <img
+                src="public/external/bglayer1271-r5fb-200h.png"
+                alt="Bglayer1271"
+                class="expanded-journey-board-bglayer"
+              />
+              <div class="expanded-journey-board-bglayer1">
+                <img
+                  src="public/external/bglayeri127-vqet-200h.png"
+                  alt="BglayerI127"
+                  class="expanded-journey-board-bglayer2"
+                />
+              </div>
+              <span class="expanded-journey-board-text051">
+                <span>Summary for Thread A</span>
+              </span>
+              <span class="expanded-journey-board-text053">
+                <span>Enter Text Here</span>
+              </span>
+            </div>
+          </div>
+          <img
+            src="public/external/ellipse1951275-ao85-200h.png"
+            alt="Ellipse1951275"
+            class="expanded-journey-board-ellipse195"
+          />
+          <img
+            src="public/external/ellipse1961276-95wh-200h.png"
+            alt="Ellipse1961276"
+            class="expanded-journey-board-ellipse196"
+          />
+          <img
+            src="public/external/ellipse1971277-or5p-200h.png"
+            alt="Ellipse1971277"
+            class="expanded-journey-board-ellipse197"
+          />
+          <div class="expanded-journey-board-group1585">
+            <span class="expanded-journey-board-text055">
+              <span>Select Process</span>
+            </span>
+          </div>
+          <div class="expanded-journey-board-group1588">
+            <img
+              src="public/external/vector1283-akqi.svg"
+              alt="Vector1283"
+              class="expanded-journey-board-vector03"
+            />
+            <img
+              src="public/external/vector1284-04mg.svg"
+              alt="Vector1284"
+              class="expanded-journey-board-vector04"
+            />
+            <img
+              src="public/external/vector1285-8wgr.svg"
+              alt="Vector1285"
+              class="expanded-journey-board-vector05"
+            />
+            <img
+              src="public/external/vector1286-wdkg.svg"
+              alt="Vector1286"
+              class="expanded-journey-board-vector06"
+            />
+          </div>
+          <div class="expanded-journey-board-group1592">
+            <div class="expanded-journey-board-group14851">
+              <img
+                src="public/external/bglayer1289-rh4g-200h.png"
+                alt="Bglayer1289"
+                class="expanded-journey-board-bglayer3"
+              />
+              <div class="expanded-journey-board-bglayer4">
+                <img
+                  src="public/external/bglayeri129-oc3e-200h.png"
+                  alt="BglayerI129"
+                  class="expanded-journey-board-bglayer5"
+                />
+              </div>
+              <span class="expanded-journey-board-text057">
+                <span>Enter Text here</span>
+              </span>
+              <span class="expanded-journey-board-text059">
+                <span>Sub thread 1</span>
+              </span>
+            </div>
+          </div>
+          <div class="expanded-journey-board-group1595">
+            <div class="expanded-journey-board-group14852">
+              <img
+                src="public/external/bglayer1295-dv1h-200h.png"
+                alt="Bglayer1295"
+                class="expanded-journey-board-bglayer6"
+              />
+              <div class="expanded-journey-board-bglayer7">
+                <img
+                  src="public/external/bglayeri129-abb-200h.png"
+                  alt="BglayerI129"
+                  class="expanded-journey-board-bglayer8"
+                />
+              </div>
+              <span class="expanded-journey-board-text061">
+                <span>Sub Interpretation 1</span>
+              </span>
+              <span class="expanded-journey-board-text063">
+                <span>Enter Text here</span>
+              </span>
+            </div>
+          </div>
+          <div class="expanded-journey-board-group1732">
+            <span class="expanded-journey-board-text065">
+              <span>Select Categ</span>
+            </span>
+            <img
+              src="public/external/vector1302-sr8w.svg"
+              alt="Vector1302"
+              class="expanded-journey-board-vector07"
+            />
+          </div>
+          <img
+            src="public/external/rectangle23221303-ehe2-200h.png"
+            alt="Rectangle23221303"
+            class="expanded-journey-board-rectangle2322"
+          />
+          <img
+            src="public/external/arrowexpand021304-gnm8.svg"
+            alt="arrowexpand021304"
+            class="expanded-journey-board-arrowexpand02"
+          />
+          <div class="expanded-journey-board-group1733">
+            <span class="expanded-journey-board-text067">
+              <span>Select Proces</span>
+            </span>
+            <img
+              src="public/external/vector1308-mxqp.svg"
+              alt="Vector1308"
+              class="expanded-journey-board-vector08"
+            />
+          </div>
+          <span class="expanded-journey-board-text069">
+            <span>Introduction</span>
+          </span>
+          <img
+            src="public/external/rectangle23271310-gn4l-200h.png"
+            alt="Rectangle23271310"
+            class="expanded-journey-board-rectangle2327"
+          />
+          <img
+            src="public/external/rectangle23281311-ocsx-200h.png"
+            alt="Rectangle23281311"
+            class="expanded-journey-board-rectangle2328"
+          />
+          <img
+            src="public/external/vector1312-7u7.svg"
+            alt="Vector1312"
+            class="expanded-journey-board-vector09"
+          />
+          <span class="expanded-journey-board-text071">
+            <span>Thread A</span>
+          </span>
+          <span class="expanded-journey-board-text073">
+            <span>Example 1</span>
+          </span>
+          <div class="expanded-journey-board-component57">
+            <img
+              src="public/external/rectangle11316-l16n-200h.png"
+              alt="Rectangle11316"
+              class="expanded-journey-board-rectangle1"
+            />
+            <div class="expanded-journey-board-group1734">
+              <span class="expanded-journey-board-text075">+</span>
+              <span class="expanded-journey-board-text076">
+                <span>Sub-thread</span>
+              </span>
+            </div>
+          </div>
+          <img
+            src="public/external/rectangle23251320-0fm-200w.png"
+            alt="Rectangle23251320"
+            class="expanded-journey-board-rectangle2325"
+          />
+          <img
+            src="public/external/rectangle23261321-ynm4-400w.png"
+            alt="Rectangle23261321"
+            class="expanded-journey-board-rectangle2326"
+          />
+          <span class="expanded-journey-board-text078">
+            <span>N</span>
+            <br />
+            <span>o</span>
+            <br />
+            <span>t</span>
+            <br />
+            <span>i</span>
+            <br />
+            <span>c</span>
+            <br />
+            <span>e</span>
+            <br />
+            <span></span>
+            <br />
+            <span>B</span>
+            <br />
+            <span>o</span>
+            <br />
+            <span>a</span>
+            <br />
+            <span>r</span>
+            <br />
+            <span>d</span>
+          </span>
+          <span class="expanded-journey-board-text102">
+            <span>The 4SA Method , How to bring a idea into progress ?</span>
+          </span>
+          <span class="expanded-journey-board-text104">
+            <span>You have a concept , How will you put into progress?</span>
+          </span>
+          <span class="expanded-journey-board-text106">
+            <span>See More</span>
+          </span>
+          <span class="expanded-journey-board-text108">
+            <span>See More</span>
+          </span>
+          <img
+            src="public/external/x011327-gfrh.svg"
+            alt="x011327"
+            class="expanded-journey-board-x01"
+          />
+          <div class="expanded-journey-board-component58">
+            <img
+              src="public/external/rectangle11330-2gm5-200h.png"
+              alt="Rectangle11330"
+              class="expanded-journey-board-rectangle11"
+            />
+            <div class="expanded-journey-board-group17341">
+              <span class="expanded-journey-board-text110">
+                <span>Submit task</span>
+              </span>
+            </div>
+          </div>
+          <span class="expanded-journey-board-text112">
+            <span>
+              How are you going to develop your stratergy ? Which method are you
+              going to use to develop a stratergy ? What if the project is
+              lengthy?
+            </span>
+          </span>
+          <span class="expanded-journey-board-text114">
+            <span>4SA Method</span>
+          </span>
+          <img
+            src="public/external/ellipse1981335-25g8-200h.png"
+            alt="Ellipse1981335"
+            class="expanded-journey-board-ellipse198"
+          />
+          <img
+            src="public/external/ellipse1991336-olxo-200h.png"
+            alt="Ellipse1991336"
+            class="expanded-journey-board-ellipse199"
+          />
+          <img
+            src="public/external/ellipse2001337-g88k-200h.png"
+            alt="Ellipse2001337"
+            class="expanded-journey-board-ellipse200"
+          />
+          <div class="expanded-journey-board-group1735">
+            <img
+              src="public/external/ellipse2011339-nd4s-200h.png"
+              alt="Ellipse2011339"
+              class="expanded-journey-board-ellipse201"
+            />
+            <span class="expanded-journey-board-text116">i</span>
+          </div>
+          <div class="expanded-journey-board-group1737">
+            <img
+              src="public/external/ellipse2011342-m2qv-200h.png"
+              alt="Ellipse2011342"
+              class="expanded-journey-board-ellipse2011"
+            />
+            <span class="expanded-journey-board-text117">i</span>
+          </div>
+          <div class="expanded-journey-board-group1738">
+            <img
+              src="public/external/ellipse2011345-ptk8-200h.png"
+              alt="Ellipse2011345"
+              class="expanded-journey-board-ellipse2012"
+            />
+            <span class="expanded-journey-board-text118">i</span>
+          </div>
+          <img
+            src="public/external/questionmark211347-5ir8-200w.png"
+            alt="questionmark211347"
+            class="expanded-journey-board-questionmark21"
+          />
+          <div class="expanded-journey-board-group1736">
+            <img
+              src="public/external/ellipse2011349-c5ij-200h.png"
+              alt="Ellipse2011349"
+              class="expanded-journey-board-ellipse2013"
+            />
+            <span class="expanded-journey-board-text119">i</span>
+          </div>
+          <img
+            src="public/external/meeting11351-c4wi-200h.png"
+            alt="meeting11351"
+            class="expanded-journey-board-meeting1"
+          />
+          <img
+            src="public/external/schedule111352-b268-200h.png"
+            alt="schedule111352"
+            class="expanded-journey-board-schedule11"
+          />
+          <span class="expanded-journey-board-text120">1</span>
+          <img
+            src="public/external/rectangle23311354-akl-400w.png"
+            alt="Rectangle23311354"
+            class="expanded-journey-board-rectangle2331"
+          />
+          <img
+            src="public/external/rectangle23321355-c9s4-400w.png"
+            alt="Rectangle23321355"
+            class="expanded-journey-board-rectangle2332"
+          />
+          <img
+            src="public/external/rectangle23331356-milj-200h.png"
+            alt="Rectangle23331356"
+            class="expanded-journey-board-rectangle2333"
+          />
+          <span class="expanded-journey-board-text121">
+            <span>Journey Board</span>
+          </span>
+          <span class="expanded-journey-board-text123">
+            <span>Explore the world of management</span>
+          </span>
+          <span class="expanded-journey-board-text125">
+            <span>Technical Project Management</span>
+            <br />
+            <span>Threadbuild</span>
+            <br />
+            <span>Structure your pointers</span>
+            <br />
+            <span>4SA Method</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
