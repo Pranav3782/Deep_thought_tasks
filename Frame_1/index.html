@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poly:ital,wght@0,400;1,400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poly:ital,wght@0,400;1,400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poly:ital,wght@0,400;1,400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poly:ital,wght@0,400;1,400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="collapsed-journeyboard-container">
+        <div class="collapsed-journeyboard-collapsed-journeyboard">
+          <img
+            src="public/external/rectangle1872115-yjbs-500w.png"
+            alt="Rectangle1872115"
+            class="collapsed-journeyboard-rectangle1872"
+          />
+          <img
+            src="public/external/rectangle2323116-614h-500h.png"
+            alt="Rectangle2323116"
+            class="collapsed-journeyboard-rectangle2323"
+          />
+          <img
+            src="public/external/rectangle2324117-26hi-200h.png"
+            alt="Rectangle2324117"
+            class="collapsed-journeyboard-rectangle2324"
+          />
+          <img
+            src="public/external/rectangle1871118-1zs-500w.png"
+            alt="Rectangle1871118"
+            class="collapsed-journeyboard-rectangle1871"
+          />
+          <img
+            src="public/external/rectangle1878119-64ua-500w.png"
+            alt="Rectangle1878119"
+            class="collapsed-journeyboard-rectangle1878"
+          />
+          <img
+            src="public/external/rectangle2320120-qhud-200h.png"
+            alt="Rectangle2320120"
+            class="collapsed-journeyboard-rectangle2320"
+          />
+          <div class="collapsed-journeyboard-group1729">
+            <img
+              src="public/external/ellipse53123-u2ek-200h.png"
+              alt="Ellipse53123"
+              class="collapsed-journeyboard-ellipse53"
+            />
+            <img
+              src="public/external/ellipse1124-36rg-200h.png"
+              alt="Ellipse1124"
+              class="collapsed-journeyboard-ellipse1"
+            />
+            <img
+              src="public/external/ellipse2125-gnhp-200h.png"
+              alt="Ellipse2125"
+              class="collapsed-journeyboard-ellipse2"
+            />
+            <img
+              src="public/external/ellipse3126-ml4t-200h.png"
+              alt="Ellipse3126"
+              class="collapsed-journeyboard-ellipse3"
+            />
+            <img
+              src="public/external/ellipse56127-d62r-200w.png"
+              alt="Ellipse56127"
+              class="collapsed-journeyboard-ellipse56"
+            />
+            <img
+              src="public/external/vector128-5jek.svg"
+              alt="Vector128"
+              class="collapsed-journeyboard-vector"
+            />
+            <img
+              src="public/external/ellipse55129-tqw-200h.png"
+              alt="Ellipse55129"
+              class="collapsed-journeyboard-ellipse55"
+            />
+            <img
+              src="public/external/logo1130-q8wj1g.svg"
+              alt="logo1130"
+              class="collapsed-journeyboard-logo1"
+            />
+            <div class="collapsed-journeyboard-group1100">
+              <div class="collapsed-journeyboard-group1098">
+                <img
+                  src="public/external/ellipse56149-gwol-200w.png"
+                  alt="Ellipse56149"
+                  class="collapsed-journeyboard-ellipse561"
+                />
+              </div>
+              <span class="collapsed-journeyboard-text">
+                <span>tools</span>
+              </span>
+            </div>
+            <div class="collapsed-journeyboard-group1097">
+              <img
+                src="public/external/ellipse56152-ru2s-200w.png"
+                alt="Ellipse56152"
+                class="collapsed-journeyboard-ellipse562"
+              />
+              <span class="collapsed-journeyboard-text002"></span>
+            </div>
+          </div>
+          <span class="collapsed-journeyboard-text003">
+            <span>Technical Project Management</span>
+          </span>
+          <img
+            src="public/external/rectangle1869155-864h-500w.png"
+            alt="Rectangle1869155"
+            class="collapsed-journeyboard-rectangle1869"
+          />
+          <img
+            src="public/external/rectangle1874156-kzk-200h.png"
+            alt="Rectangle1874156"
+            class="collapsed-journeyboard-rectangle1874"
+          />
+          <img
+            src="public/external/rectangle2321157-bl07-200h.png"
+            alt="Rectangle2321157"
+            class="collapsed-journeyboard-rectangle2321"
+          />
+          <img
+            src="public/external/rectangle1870158-d46p-500w.png"
+            alt="Rectangle1870158"
+            class="collapsed-journeyboard-rectangle1870"
+          />
+          <img
+            src="public/external/rectangle1873159-8n72q-200h.png"
+            alt="Rectangle1873159"
+            class="collapsed-journeyboard-rectangle1873"
+          />
+          <div class="collapsed-journeyboard-group1730">
+            <span class="collapsed-journeyboard-text005">
+              <span>Explore the world of management</span>
+            </span>
+            <span class="collapsed-journeyboard-text007">
+              <span>
+                As a project manager, you play an important reole in leading a
+                project through initiation, planning, execution, monitoring,
+                controlling and completion. How? Do you want to manage each and
+                every step of your life?
+              </span>
+            </span>
+          </div>
+          <img
+            src="public/external/rectangle1875163-a927-200h.png"
+            alt="Rectangle1875163"
+            class="collapsed-journeyboard-rectangle1875"
+          />
+          <span class="collapsed-journeyboard-text009">
+            <span class="collapsed-journeyboard-text010">Description :</span>
+            <span>
+              Write a 300 - 400 word article from your thread . Publish your
+              understanding and showcase your understanding to the entire world
+            </span>
+          </span>
+          <span class="collapsed-journeyboard-text012">
+            <span class="collapsed-journeyboard-text013">Description :</span>
+            <span>To Explore more read more</span>
+          </span>
+          <img
+            src="public/external/rectangle1879166-c41t-200w.png"
+            alt="Rectangle1879166"
+            class="collapsed-journeyboard-rectangle1879"
+          />
+          <img
+            src="public/external/rectangle2329167-6p8f-200w.png"
+            alt="Rectangle2329167"
+            class="collapsed-journeyboard-rectangle2329"
+          />
+          <img
+            src="public/external/rectangle1874168-jeh-200h.png"
+            alt="Rectangle1874168"
+            class="collapsed-journeyboard-rectangle18741"
+          />
+          <span class="collapsed-journeyboard-text015"><span>Title</span></span>
+          <span class="collapsed-journeyboard-text017">
+            <span>Content</span>
+          </span>
+          <img
+            src="public/external/rectangle1880171-viio-200h.png"
+            alt="Rectangle1880171"
+            class="collapsed-journeyboard-rectangle1880"
+          />
+          <img
+            src="public/external/rectangle1882172-7su-200h.png"
+            alt="Rectangle1882172"
+            class="collapsed-journeyboard-rectangle1882"
+          />
+          <img
+            src="public/external/rectangle1881173-y1v-200h.png"
+            alt="Rectangle1881173"
+            class="collapsed-journeyboard-rectangle1881"
+          />
+          <span class="collapsed-journeyboard-text019">1</span>
+          <span class="collapsed-journeyboard-text020">
+            <span class="collapsed-journeyboard-text021">Description:</span>
+            <span>
+              Story of Alignment Scope of Agility Specific Accountable
+              Staggering Approach
+            </span>
+          </span>
+          <span class="collapsed-journeyboard-text023"><span>File</span></span>
+          <span class="collapsed-journeyboard-text025"><span>Edit</span></span>
+          <span class="collapsed-journeyboard-text027"><span>View</span></span>
+          <span class="collapsed-journeyboard-text029">
+            <span>Insert</span>
+          </span>
+          <span class="collapsed-journeyboard-text031">
+            <span>Format</span>
+          </span>
+          <span class="collapsed-journeyboard-text033"><span>Tools</span></span>
+          <span class="collapsed-journeyboard-text035"><span>Table</span></span>
+          <span class="collapsed-journeyboard-text037"><span>Help</span></span>
+          <img
+            src="public/external/image13184-0yv-500w.png"
+            alt="image13184"
+            class="collapsed-journeyboard-image13"
+          />
+          <img
+            src="public/external/arrowcurveleftdown185-hou7.svg"
+            alt="arrowcurveleftdown185"
+            class="collapsed-journeyboard-arrowcurveleftdown"
+          />
+          <img
+            src="public/external/arrowcurveleftright186-ltef.svg"
+            alt="arrowcurveleftright186"
+            class="collapsed-journeyboard-arrowcurveleftright"
+          />
+          <span class="collapsed-journeyboard-text039">
+            <span>Technical Project Management</span>
+          </span>
+          <span class="collapsed-journeyboard-text041">
+            <span>Structure your Pointers</span>
+          </span>
+          <img
+            src="public/external/rectangle2318189-idc-200h.png"
+            alt="Rectangle2318189"
+            class="collapsed-journeyboard-rectangle2318"
+          />
+          <span class="collapsed-journeyboard-text043">
+            <span>Paragraph</span>
+          </span>
+          <span class="collapsed-journeyboard-text045">
+            <span>Threadbuild</span>
+          </span>
+          <img
+            src="public/external/rectangle2319192-qw7f-200h.png"
+            alt="Rectangle2319192"
+            class="collapsed-journeyboard-rectangle2319"
+          />
+          <span class="collapsed-journeyboard-text047">
+            <span class="collapsed-journeyboard-text048">Description:</span>
+            <span>
+              Watch the video and threadbuild, and jot out key threads while
+              watching the video
+            </span>
+          </span>
+          <div class="collapsed-journeyboard-group1431">
+            <span class="collapsed-journeyboard-text050">
+              <span>Thread A</span>
+            </span>
+          </div>
+          <img
+            src="public/external/vector197-6zib.svg"
+            alt="Vector197"
+            class="collapsed-journeyboard-vector01"
+          />
+          <img
+            src="public/external/vector198-sqcm.svg"
+            alt="Vector198"
+            class="collapsed-journeyboard-vector02"
+          />
+          <div class="collapsed-journeyboard-group1600">
+            <div class="collapsed-journeyboard-group1485">
+              <img
+                src="public/external/bglayer1101-g9d-200h.png"
+                alt="Bglayer1101"
+                class="collapsed-journeyboard-bglayer"
+              />
+              <div class="collapsed-journeyboard-bglayer1">
+                <img
+                  src="public/external/bglayeri110-f8gc-200h.png"
+                  alt="BglayerI110"
+                  class="collapsed-journeyboard-bglayer2"
+                />
+              </div>
+              <span class="collapsed-journeyboard-text052">
+                <span>Summary for Thread A</span>
+              </span>
+              <span class="collapsed-journeyboard-text054">
+                <span>Enter Text Here</span>
+              </span>
+            </div>
+          </div>
+          <img
+            src="public/external/ellipse1951105-e29h-200h.png"
+            alt="Ellipse1951105"
+            class="collapsed-journeyboard-ellipse195"
+          />
+          <img
+            src="public/external/ellipse1961106-ai6j-200h.png"
+            alt="Ellipse1961106"
+            class="collapsed-journeyboard-ellipse196"
+          />
+          <img
+            src="public/external/ellipse1971107-bmu-200h.png"
+            alt="Ellipse1971107"
+            class="collapsed-journeyboard-ellipse197"
+          />
+          <div class="collapsed-journeyboard-group1585">
+            <span class="collapsed-journeyboard-text056">
+              <span>Select Process</span>
+            </span>
+          </div>
+          <div class="collapsed-journeyboard-group1588">
+            <img
+              src="public/external/vector1113-b0et.svg"
+              alt="Vector1113"
+              class="collapsed-journeyboard-vector03"
+            />
+            <img
+              src="public/external/vector1114-6zqy.svg"
+              alt="Vector1114"
+              class="collapsed-journeyboard-vector04"
+            />
+            <img
+              src="public/external/vector1115-434v.svg"
+              alt="Vector1115"
+              class="collapsed-journeyboard-vector05"
+            />
+            <img
+              src="public/external/vector1116-aitu.svg"
+              alt="Vector1116"
+              class="collapsed-journeyboard-vector06"
+            />
+          </div>
+          <div class="collapsed-journeyboard-group1592">
+            <div class="collapsed-journeyboard-group14851">
+              <img
+                src="public/external/bglayer1119-7ofa-200h.png"
+                alt="Bglayer1119"
+                class="collapsed-journeyboard-bglayer3"
+              />
+              <div class="collapsed-journeyboard-bglayer4">
+                <img
+                  src="public/external/bglayeri112-jjar-200h.png"
+                  alt="BglayerI112"
+                  class="collapsed-journeyboard-bglayer5"
+                />
+              </div>
+              <span class="collapsed-journeyboard-text058">
+                <span>Enter Text here</span>
+              </span>
+              <span class="collapsed-journeyboard-text060">
+                <span>Sub thread 1</span>
+              </span>
+            </div>
+          </div>
+          <div class="collapsed-journeyboard-group1595">
+            <div class="collapsed-journeyboard-group14852">
+              <img
+                src="public/external/bglayer1125-vib-200h.png"
+                alt="Bglayer1125"
+                class="collapsed-journeyboard-bglayer6"
+              />
+              <div class="collapsed-journeyboard-bglayer7">
+                <img
+                  src="public/external/bglayeri112-jhx8-200h.png"
+                  alt="BglayerI112"
+                  class="collapsed-journeyboard-bglayer8"
+                />
+              </div>
+              <span class="collapsed-journeyboard-text062">
+                <span>Sub Interpretation 1</span>
+              </span>
+              <span class="collapsed-journeyboard-text064">
+                <span>Enter Text here</span>
+              </span>
+            </div>
+          </div>
+          <div class="collapsed-journeyboard-group1732">
+            <span class="collapsed-journeyboard-text066">
+              <span>Select Categ</span>
+            </span>
+            <img
+              src="public/external/vector1132-wceq.svg"
+              alt="Vector1132"
+              class="collapsed-journeyboard-vector07"
+            />
+          </div>
+          <img
+            src="public/external/rectangle23221133-75qo-200h.png"
+            alt="Rectangle23221133"
+            class="collapsed-journeyboard-rectangle2322"
+          />
+          <img
+            src="public/external/arrowexpand021134-yddm.svg"
+            alt="arrowexpand021134"
+            class="collapsed-journeyboard-arrowexpand02"
+          />
+          <div class="collapsed-journeyboard-group1733">
+            <span class="collapsed-journeyboard-text068">
+              <span>Select Proces</span>
+            </span>
+            <img
+              src="public/external/vector1138-gax.svg"
+              alt="Vector1138"
+              class="collapsed-journeyboard-vector08"
+            />
+          </div>
+          <span class="collapsed-journeyboard-text070">
+            <span>Introduction</span>
+          </span>
+          <img
+            src="public/external/rectangle23271140-oej7-200h.png"
+            alt="Rectangle23271140"
+            class="collapsed-journeyboard-rectangle2327"
+          />
+          <img
+            src="public/external/rectangle23281141-c0ky-200h.png"
+            alt="Rectangle23281141"
+            class="collapsed-journeyboard-rectangle2328"
+          />
+          <img
+            src="public/external/vector1142-r44.svg"
+            alt="Vector1142"
+            class="collapsed-journeyboard-vector09"
+          />
+          <span class="collapsed-journeyboard-text072">
+            <span>Thread A</span>
+          </span>
+          <span class="collapsed-journeyboard-text074">
+            <span>Example 1</span>
+          </span>
+          <div class="collapsed-journeyboard-component57">
+            <img
+              src="public/external/rectangle11146-jj5-200h.png"
+              alt="Rectangle11146"
+              class="collapsed-journeyboard-rectangle1"
+            />
+            <div class="collapsed-journeyboard-group1734">
+              <span class="collapsed-journeyboard-text076">+</span>
+              <span class="collapsed-journeyboard-text077">
+                <span>Sub-thread</span>
+              </span>
+            </div>
+          </div>
+          <img
+            src="public/external/rectangle23251150-zksz-200w.png"
+            alt="Rectangle23251150"
+            class="collapsed-journeyboard-rectangle2325"
+          />
+          <img
+            src="public/external/rectangle23261151-w9eq-400w.png"
+            alt="Rectangle23261151"
+            class="collapsed-journeyboard-rectangle2326"
+          />
+          <span class="collapsed-journeyboard-text079">
+            <span>N</span>
+            <br />
+            <span>o</span>
+            <br />
+            <span>t</span>
+            <br />
+            <span>i</span>
+            <br />
+            <span>c</span>
+            <br />
+            <span>e</span>
+            <br />
+            <span></span>
+            <br />
+            <span>B</span>
+            <br />
+            <span>o</span>
+            <br />
+            <span>a</span>
+            <br />
+            <span>r</span>
+            <br />
+            <span>d</span>
+          </span>
+          <span class="collapsed-journeyboard-text103">
+            <span>The 4SA Method , How to bring a idea into progress ?</span>
+          </span>
+          <span class="collapsed-journeyboard-text105">
+            <span>You have a concept , How will you put into progress?</span>
+          </span>
+          <span class="collapsed-journeyboard-text107">
+            <span>See More</span>
+          </span>
+          <span class="collapsed-journeyboard-text109">
+            <span>See More</span>
+          </span>
+          <img
+            src="public/external/x011157-zupn.svg"
+            alt="x011157"
+            class="collapsed-journeyboard-x01"
+          />
+          <div class="collapsed-journeyboard-component58">
+            <img
+              src="public/external/rectangle11160-h0ix-200h.png"
+              alt="Rectangle11160"
+              class="collapsed-journeyboard-rectangle11"
+            />
+            <div class="collapsed-journeyboard-group17341">
+              <span class="collapsed-journeyboard-text111">
+                <span>Submit task</span>
+              </span>
+            </div>
+          </div>
+          <span class="collapsed-journeyboard-text113">
+            <span>
+              How are you going to develop your stratergy ? Which method are you
+              going to use to develop a stratergy ? What if the project is
+              lengthy?
+            </span>
+          </span>
+          <span class="collapsed-journeyboard-text115">
+            <span>4SA Method</span>
+          </span>
+          <img
+            src="public/external/ellipse1981165-gkr-200h.png"
+            alt="Ellipse1981165"
+            class="collapsed-journeyboard-ellipse198"
+          />
+          <img
+            src="public/external/ellipse1991166-5q4tp-200h.png"
+            alt="Ellipse1991166"
+            class="collapsed-journeyboard-ellipse199"
+          />
+          <img
+            src="public/external/ellipse2001167-ym7-200h.png"
+            alt="Ellipse2001167"
+            class="collapsed-journeyboard-ellipse200"
+          />
+          <div class="collapsed-journeyboard-group1735">
+            <img
+              src="public/external/ellipse2011169-x3o8-200h.png"
+              alt="Ellipse2011169"
+              class="collapsed-journeyboard-ellipse201"
+            />
+            <span class="collapsed-journeyboard-text117">i</span>
+          </div>
+          <div class="collapsed-journeyboard-group1737">
+            <img
+              src="public/external/ellipse2011172-mkhl-200h.png"
+              alt="Ellipse2011172"
+              class="collapsed-journeyboard-ellipse2011"
+            />
+            <span class="collapsed-journeyboard-text118">i</span>
+          </div>
+          <div class="collapsed-journeyboard-group1738">
+            <img
+              src="public/external/ellipse2011175-9zc-200h.png"
+              alt="Ellipse2011175"
+              class="collapsed-journeyboard-ellipse2012"
+            />
+            <span class="collapsed-journeyboard-text119">i</span>
+          </div>
+          <img
+            src="public/external/questionmark211177-xie-200w.png"
+            alt="questionmark211177"
+            class="collapsed-journeyboard-questionmark21"
+          />
+          <div class="collapsed-journeyboard-group1736">
+            <img
+              src="public/external/ellipse2011179-h8t-200h.png"
+              alt="Ellipse2011179"
+              class="collapsed-journeyboard-ellipse2013"
+            />
+            <span class="collapsed-journeyboard-text120">i</span>
+          </div>
+          <img
+            src="public/external/meeting11181-mjxp-200h.png"
+            alt="meeting11181"
+            class="collapsed-journeyboard-meeting1"
+          />
+          <img
+            src="public/external/schedule111182-ewnq-200h.png"
+            alt="schedule111182"
+            class="collapsed-journeyboard-schedule11"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
